@@ -5,7 +5,7 @@ export default function Master(props) {
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-warning">
                 <div className="container-fluid">
-                    <Link className="navbar-brand text-primary text-bold" to="/">
+                    <Link className="navbar-brand text-white fw-bold text-bold" to="/">
                         React Ecommerce
                     </Link>
                     <button
@@ -23,7 +23,7 @@ export default function Master(props) {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link
-                                    className="nav-link text-primary text-bold"
+                                    className="nav-link text-white fw-bold text-bold"
                                     aria-current="page"
                                     to="/"
                                 >
@@ -31,12 +31,12 @@ export default function Master(props) {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-primary text-bold" href="/cart.html">
-                                    Carts<span className="badge badge-danger ms-2">8</span>
-                                </a>
+                                <Link className="nav-link text-white fw-bold text-bold" to="/cart">
+                                    Carts<span className="badge badge-danger ms-2">{props.cart.length}</span>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-primary text-bold" to="/about ">
+                                <Link className="nav-link text-white fw-bold text-bold" to="/about ">
                                     About
                                 </Link>
                             </li>
