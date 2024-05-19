@@ -61,7 +61,7 @@ export default function Home(props) {
                                                     data-mdb-ripple-init=""
                                                     style={{ marginRight: 15 }}
                                                 >
-                                                    Ks 5000
+                                                   {d.price}
                                                 </span>
                                                 <button onClick={() => addtoCart(d)}
                                                     className="mt-2 btn border border-danger border-2 btn-danger"

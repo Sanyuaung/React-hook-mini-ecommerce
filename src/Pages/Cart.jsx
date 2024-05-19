@@ -80,11 +80,11 @@ export default function Cart(props) {
         </div>
         <div className="container">
           <div className="row">
-            <div className="offset-md-6">
-              <label style={{ marginRight: 15 }}>Totals</label>
+            <div className="offset-md-8">
+              <label className='fw-bold' style={{ marginRight: 70 }}>Totals</label>
               <a
                 href="#!"
-                className="btn btn-sm border border-danger"
+                className="fw-bold btn btn-sm border border-danger"
                 data-mdb-ripple-init=""
               >
                 {total}
